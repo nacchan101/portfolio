@@ -1,9 +1,11 @@
 <html>
     <head>
         <title>nacchan101</title>
-    </head>
-    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+           
     <body>
         <nav class="navbar">
             <div class="logo">
@@ -166,44 +168,48 @@
             </div>
         </section>
         <section id="contact">
-            <div class="contact-content">
-<div class="contact-form">
-  <div class="contact-title">
-    <h2>Contact Me</h2>
-  </div>
-  <div class="contact-inputs">
-      
-    <div class="contact-name">
-      <div class="contact-name-inputs">
-        <label for="first-name">First Name</label>
-        <input type="text" id="first-name" name="first-name" placeholder="Enter first name" required>
-      </div>
-
-      <div class="contact-name-inputs">
-        <label for="last-name">Last Name</label>
-        <input type="text" id="last-name" name="last-name" placeholder="Enter last name" required>
-      </div>
-    </div>
-
-    <div class="contact-email">
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" placeholder="Enter your email" required>
-    </div>
-    <div class="contact-msg">
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="5" placeholder="Type your message" required></textarea>
-    </div>
-  </div>
-
-  <div class="contact-buttons">
-    <button type="submit">Send Message</button>
-  </div>
-</div>
-                <div class="contact-media">
-                    <div class="contact-links">
-                        
+            <div class="contact-content">                
+                <div class="contact-media">                    
+                    
+                    <div class="contact-video">
+                        <video loop muted autoplay>
+                            <source src="video/bocchi-dance.mp4" type="video/mp4">
+                        </video>
                     </div>
                 </div>
+                <div class="contact-page">
+                    <form class="contact-form" action="mailto: aeronjhay123@gmail.com" method="post" enctype="text/plain">                        
+                      <div class="contact-title">
+                          <h5>Contact <span>Me</span>:</h5>
+                      </div>
+                      <div class="contact-name">
+                        <div class="contact-fname">
+                        <label for="firstname">First Name</label>
+                            <input type="text" id="firstname" name="firstname" placeholder="Enter your first name" required>
+                        </div>
+                        <div class="contact-lname">
+                        <label for="lastname">Last Name (Optional)</label>
+                        <input type="text" id="lastname" name="lastname" placeholder="Enter your last name">
+                        </div>
+                    </div>
+                    <div class="contact-mail">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your e-mail" required>
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Whats on your mind?"></textarea>
+                    </div>
+                    <div class="contact-button">
+                        <div class="contact-submit">
+                            <button id="submit" type="submit" class="send-btn">Send Message</button>
+                        </div>
+                        <div class="contact-links">
+                            <a href="https://www.facebook.com/ajbalitzzz?mibextid=ZbWKwL"><img src="svg/facebook-icon.svg"></a>
+                            <a href="https://www.instagram.com/ajbalitzzz/profilecard/?igsh=cDFqZWxsY2M3MnFx"><img src="svg/instagram-icon.svg"></a>
+                            <a href="https://www.tiktok.com/@ajbalitzzz?_r=1&_d=ebfeabj00d4eim&sec_uid=MS4wLjABAAAAcBXi0d1LYjoc7wyF_9XwUFZu_dcDeq6Eu2c7rD2QyozBWi_YzyooN7N0wDbjPP2v&share_author_id=7059330845685056514&sharer_language=en&source=h5_t&u_code=e02m2emf41bkfg&timestamp=1744694998&user_id=7059330845685056514&sec_user_id=MS4wLjABAAAAcBXi0d1LYjoc7wyF_9XwUFZu_dcDeq6Eu2c7rD2QyozBWi_YzyooN7N0wDbjPP2v&utm_source=copy&utm_campaign=client_share&utm_medium=android&share_iid=7473834085708089096&share_link_id=8cf8880a-1de3-4afa-a837-a1c6ab2f1177&share_app_id=1180&ugbiz_name=ACCOUNT&ug_btm=b8727%2Cb7360&social_share_type=5&enable_checksum=1"><img src="svg/tiktok-icon.svg"></a>
+                            <a href="https://github.com/nacchan101/balitzzz"><img src="svg/github-icon.svg"></a>
+                        </div>
+                    </div>                      
+                </form>
             </div>
         </section>
         <script src="script.js"></script>
