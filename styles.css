@@ -713,12 +713,12 @@ section {
     
     /* Navbar adjustments */
     .navbar {
-        flex-direction: column;
+        flex-direction: row;
         padding: 0.5rem 0;
     }
     
     .navbar ul {
-        flex-direction: column;
+        flex-direction: row;
         gap: 0.5rem;
         padding: 0.5rem 0;
         align-items: center;
@@ -741,28 +741,34 @@ section {
     }
     
     .img-wrap {
-        width: 80%;
-        margin-bottom: 2rem;
+        width: 80%;   
     }
     
     .home-intro h1 {
-        font-size: 2rem;
-        margin: 5% 0;
+        font-size: 1.5rem;
+        margin: 3% 0;
         text-align: center;
     }
     
     .home-intro p {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         text-align: center;
     }
     
+    .home-intro a {
+        font-size: 1rem;
+        text-align: center;
+        margin-left: 8vh;   
+    }
+    
     .home-buttons {
+        padding-top: 2vh;
         flex-direction: column;
         align-items: center;
         gap: 1rem;
     }
     
-    .home-buttons button {
+    .home-buttons button {    
         width: 60%;
     }
     
@@ -836,21 +842,31 @@ section {
     }
     
     .projects-set {
-        flex-wrap: wrap;
+        display: flex;
         justify-content: center;
+        flex-direction: row;
         gap: 1rem;
+        width: 100%;
     }
     
     .projects-slot {
-        width: 45%;
+        flex-wrap: wrap;
+    }
+    .projects-slot h4 {
+        font-size: 0.5rem;
+    }
+    .projects-slot img {
+        width: 20%;
     }
     
     .projects-media {
-        padding: 1vh;
+        margin-top: -3vh;
+        padding: 0 0 15vh 0;
     }
     
     .projects-description {
-        padding: 2vh;
+        margin-top: -10vh;
+        padding: 0 0 10vh 0;
     }
     
     .projects-description p {
@@ -866,6 +882,7 @@ section {
     
     .contact-content {
         flex-direction: column;
+        width: 85%;
     }
     
     .contact-page, .contact-media {
@@ -909,10 +926,17 @@ section {
     .contact-links {
         text-align: center;
     }
-    
-    .contact-links img {
-        width: 15%;
+    .contact-links a {
+        padding: 0;
+        margin: 0;
+        height: auto;
+        width: auto;
     }
+    .contact-links img {
+        height: auto;
+        width: auto;
+    }
+    
     
     /* Animation adjustments for mobile */
     .about-overview, .about-career, .about-likes, .about-dislikes {
@@ -934,4 +958,4 @@ section {
     .contact-links img {
         width: 20%;
     }
-}
+    }
